@@ -25,7 +25,7 @@ app.config['MYSQL_DB'] = 'dharsh'
 mysql = MySQL(app)
 
 def send_email(email):
-    sg = sendgrid.SendGridAPIClient('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')
+    sg = sendgrid.SendGridAPIClient('Sendgrid api key')
     from_email = Email("dharshdummy@gmail.com")  # Change to your verified sender
     to_email = To(email)  # Change to your recipient
     subject = "Alert! You are in a Containment zone"
